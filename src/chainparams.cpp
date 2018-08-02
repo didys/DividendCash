@@ -128,7 +128,7 @@ public:
         nTargetSpacing = 1 * 60;  // DividendCash: 1 minute
         nMaturity = 60;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 110010101 * COIN;
+        nMaxMoneyOut = 101010101 * COIN;
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 500;

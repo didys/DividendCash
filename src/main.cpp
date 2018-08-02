@@ -2136,9 +2136,9 @@ int64_t GetBlockValue(int nHeight)
 
     int64_t nSubsidy = 0;
     if (nHeight == 0) {
-        nSubsidy = 3248501 * COIN;
+        nSubsidy = 2197301 * COIN;
     } else if (nHeight <= 525600 && nHeight > 0) {
-        nSubsidy = 21 * COIN;
+        nSubsidy = 23 * COIN;
     } else if (nHeight <= 1576800 && nHeight >= 525600) {
         nSubsidy = 20 * COIN;
     } else if (nHeight <= 3153600 && nHeight >= 1576800) {
@@ -2388,30 +2388,19 @@ CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZDVDStake)
 {
-    // int64_t ret = 0;
+    int64_t ret = 0;
 
-    // if (Params().NetworkID() == CBaseChainParams::TESTNET) {
-    //     if (nHeight < 200)
-    //         return 0;
-    // }
-    //
-    // if (nHeight <= 43200) {
-    //     ret = blockValue / 5;
-    // } else if (nHeight < 86400 && nHeight > 43200) {
-    //     ret = blockValue / (100 / 30);
-    // } else if (nHeight < (Params().NetworkID() == CBaseChainParams::TESTNET ? 145000 : 151200) && nHeight >= 86400) {
-    //     ret = 50 * COIN;
-    // } else if (nHeight <= Params().LAST_POW_BLOCK() && nHeight >= 151200) {
-    //     ret = blockValue / 2;
-    // } else if (nHeight < Params().Zerocoin_Block_V2_Start()) {
-    //     return GetSeeSaw(blockValue, nMasternodeCount, nHeight);
-    // } else {
-    //     //When zDVD is staked, masternode only gets 2 DVD
-    //     ret = 3 * COIN;
-    //     if (isZDVDStake)
-    //         ret = 2 * COIN;
-    // }
-    int64_t ret = blockValue / 0.8;
+    if (Params().NetworkID() == CBaseChainParams::TESTNET) {
+        if (nHeight < 200)
+            return 0;
+    }
+
+    if (nHeight <= 525600) {
+        ret = blockValue / 0.9;
+    } else {
+        //When zDVD is staked, masternode only gets 2 DVD
+        ret = blockValue / 0.8;
+    }
     return ret;
 }
 
