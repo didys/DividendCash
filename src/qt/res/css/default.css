@@ -6,9 +6,9 @@
 /* light-purple1:      #75cbe7 (main purple for white backgrounds)                      */
 /* light-purple2:      #5fa7bf (sligtly darker for gradients)                           */
 /*                                                                                      */
-/* medium-purple1:     #6f5ca3 (on hover)                                               */
-/* medium-purple1:     #5c4c7c (main purple for dark backgrounds)                       */
-/* medium-purple2:     #5b4c86 (sligtly darker for gradients)                           */
+/* medium-purple1:     #1385b2 (on hover)                                               */
+/* medium-purple1:     #197aa0 (main purple for dark backgrounds)                       */
+/* medium-purple2:     #198ab7 (sligtly darker for gradients)                           */
 /*                                                                                      */
 /* fuchsia:            #df1cca                                                          */
 /* background:         #f8f6f6                                                          */
@@ -112,7 +112,7 @@ background-color:#fff;
 }
 
 QProgressBar {
-color: #AAAAAA;
+color: #fff;
 border:0px solid grey;
 border-radius:5px;
 background-color:transparent;
@@ -240,7 +240,7 @@ margin: 2px;
 }
 
 QPushButton:hover {
-background-color: qlineargradient(y1:0, y2: 1, stop: 0 #ffffff, stop: 0.1 #ffffff, stop: 0.101 #6f5ca3, stop: 0.9 #6f5ca3, stop: 0.901 #ffffff, stop: 1 #ffffff);
+background-color: qlineargradient(y1:0, y2: 1, stop: 0 #ffffff, stop: 0.1 #ffffff, stop: 0.101 #1385b2, stop: 0.9 #1385b2, stop: 0.901 #ffffff, stop: 1 #ffffff);
 }
 
 QPushButton:focus {
@@ -251,7 +251,7 @@ QPushButton:focus {
 QPushButton:pressed {
 background-color: #5c4c7c;
 border:1px solid #000000;
-background-color: qlineargradient(y1:0, y2: 1, stop: 0 #00ff00, stop: 0.1 #00ff00, stop: 0.101 #6f5ca3, stop: 0.9 #6f5ca3, stop: 0.901 #00ff00, stop: 1 #00ff00);
+background-color: qlineargradient(y1:0, y2: 1, stop: 0 #00ff00, stop: 0.1 #00ff00, stop: 0.101 #1385b2, stop: 0.9 #1385b2, stop: 0.901 #00ff00, stop: 1 #00ff00);
 }
 
 /* Special handling for statusbar-icons (which are partly QPushButtons) */
