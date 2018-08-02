@@ -126,7 +126,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // DividendCash: 1 day
         nTargetSpacing = 1 * 60;  // DividendCash: 1 minute
-        nMaturity = 10;
+        nMaturity = 60;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 88000000 * COIN;
 
