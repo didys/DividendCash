@@ -103,7 +103,7 @@ background-color: #138fc2; /* Do not highlight placeholder on hover */
 }
 
 QToolBar > QToolButton:pressed {
-background-color: qlineargradient(x1:0, x2: 1, stop: 0 #00a300, stop: 0.07 #00a300, stop: 0.0701 #138fc2, stop: 1 #138fc2);
+background-color: qlineargradient(x1:0, x2: 1, stop: 0 #138fc2, stop: 0.07 #138fc2, stop: 0.0701 #138fc2, stop: 1 #138fc2);
 color:#fff;
 }
 
