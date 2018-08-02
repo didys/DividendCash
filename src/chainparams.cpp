@@ -54,7 +54,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0000010cb61f8b57803d5069de788bccbcca1d6a3acb1e00f7bb9aff88c1b850"));
+    (0, uint256("0000085f6412844c97905b3192cd3238822c3cbeed97ae7556a09a80b4973113"));
 
 
 static const Checkpoints::CCheckpointData data = {
@@ -128,7 +128,7 @@ public:
         nTargetSpacing = 1 * 60;  // DividendCash: 1 minute
         nMaturity = 60;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 88000000 * COIN;
+        nMaxMoneyOut = 110010101 * COIN;
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 500;
@@ -155,7 +155,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-         const char* pszTimestamp = "DividendCash.Cash is the most profitable cryptocurrency";
+         const char* pszTimestamp = "Dividend.Cash is the most profitable cryptocurrency";
          CMutableTransaction txNew;
          txNew.vin.resize(1);
          txNew.vout.resize(1);
